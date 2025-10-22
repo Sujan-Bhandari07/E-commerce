@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Basic styling for all components */
+main {
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+

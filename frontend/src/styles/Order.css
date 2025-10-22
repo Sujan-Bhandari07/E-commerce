@@ -1,0 +1,232 @@
+.order {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* min-height: 100vh; */
+}
+
+/* Title section */
+.order h4 {
+    width: 100%;
+    /* text-align: left; */
+    margin: 4vh 0vh;
+    font-size: 1.2rem;
+    font-weight: 400;  
+}
+
+.order h4 span {
+  font-weight: 200;
+}
+
+/* Orders container */
+.orders {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Individual order item */
+.ord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+gap: 10vw;
+  border-radius: 8px;
+
+
+}
+
+/* Left section - Product image */
+.ord .l {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.ord .l figure {
+  width: 7vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ord .l figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product details */
+.ord .l .bis {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+}
+
+.ord .l .naam {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.ord .l .x {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.ord .l .x p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+.ord .lll span{
+  text-transform: uppercase;
+}
+
+.ord .l .x p:first-child {
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+/* Quantity and Size styling */
+.ord .l .x p:nth-child(2),
+.ord .l .x p:nth-child(3) {
+
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.ord .l .date {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+
+.ord .l .tirni {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Middle section - Order status */
+.ord .m {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #333;
+
+  width: 15vw;
+
+
+}
+
+.ord .m::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #28a745;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Right section - Track order button */
+.ord .r {
+  display: flex;
+  align-items: center;
+}
+
+.ord .r button {
+
+  color: #333;
+  border: 1px solid #dee2e6;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .order {
+    padding: 20px 15px;
+  }
+  
+  .order h4 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .ord {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .ord .l {
+    width: 100%;
+  }
+  
+  .ord .m {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .ord .r {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .ord .l .x {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order h4 {
+    font-size: 1.8rem;
+  }
+  
+  .ord {
+    padding: 15px;
+  }
+  .ord .l figure {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .ord .l .naam {
+    font-size: 1rem;
+  }
+  
+  .ord .r button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+.line{
+    border: .1px solid gray;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.ord .m,.r{
+    position: relative;
+    bottom: 2vh;
+}  

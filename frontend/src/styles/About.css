@@ -1,0 +1,131 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+width: 93vw;
+margin: 7vh auto;
+    flex-direction: column;
+}
+
+.about .top{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.top h4{
+font-size: 1.4rem;
+
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4vh;
+
+}
+
+.top h4 span{
+    font-weight: 200;
+}
+
+.top .aboutus{
+    display: flex
+    
+    ;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+gap: 5vw;
+}
+
+.top .aboutus figure{
+    width: 30vw;
+    height: 60vh;
+}
+
+.top  .aboutus figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+
+.top .aboutus p{
+
+    font-weight: 300;
+    width: calc(100% - 30vw)
+;
+text-align: justify;
+
+}
+.top .aboutus p p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1rem;
+
+}
+
+.about .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85vw;
+    flex-direction: column;
+}
+.about .bottom> h4{
+    font-size: 1.4rem;
+
+    font-weight: 400;
+    width: 100%;
+text-align: center;
+margin-top: 6vh;
+    margin-bottom: 6vh;
+
+}
+
+.bottom h4 span{
+    font-weight: 200;
+}
+
+.bottom .boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.boxes .choose{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: .1px solid gray;
+    width: 30%;
+padding: 7vh;
+background-color: #FAFAFC;
+}
+
+.bottom .boxes .choose h4{
+font-weight: 550;
+    font-size: 1.2rem;
+    margin-bottom: 2vh;
+    text-transform: capitalize;
+}
+
+.choose p{
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    word-spacing: .2rem;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+

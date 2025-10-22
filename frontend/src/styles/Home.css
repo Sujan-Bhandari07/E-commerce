@@ -1,0 +1,234 @@
+.home{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 70vw;
+  height: 60vh;
+margin-top: 5vh;
+
+
+}
+.leftttt{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 50%;
+
+/* width: 50%; */
+
+
+}
+.leftttt p{
+text-transform: uppercase;
+}
+.leftttt h2{
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.home .right{
+
+  height: 100%;
+  width: 50%;
+
+
+
+}
+figure{
+  height: 100%;
+  width: 100%;
+
+}
+figure img{
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+
+  width: 90vw;
+  row-gap: 1.4rem;
+}
+
+.latest .let{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.latest .let .h3{
+
+  font-weight: 320;
+  font-size: 1.3rem;
+
+}
+
+.latest  .let .h3 .span{
+font-weight: 400;
+
+font-size: 1.6rem;
+}
+
+.latest .let  .desc{
+  font-weight: 200;
+  
+
+}
+
+
+/* .latest img{
+height: 28vh;
+width: 13vw;
+
+
+  object-fit: cover;
+  object-position: center center;
+} */
+
+.cards{
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-gap: 2vw 2vw;
+  margin: auto;
+
+
+}
+
+/* .cards .caption{
+padding: 0 1vh;
+padding-bottom: 2px;
+
+
+
+border-radius: 4vw;
+background: rgba(241, 238, 233, 0.952);
+} */
+
+/* .caption .name,.price{
+  font-weight: 300;
+  font-size: .9rem;
+} */
+
+.bestseller{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+
+  width: 90vw;
+  row-gap: 1.4rem;
+}
+
+.policies{
+  display: flex;
+justify-content: center;
+  width: 100%;
+
+  align-items: center;
+  margin-top: 3vh;
+}
+.policies figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.policies figure figcaption{
+  display: flex;
+  justify-content: center
+  ;
+  align-items: center;
+  padding-top: 1vh;
+  flex-direction: column;
+}
+
+.policies img{
+height: 9vh;
+width: 9vh;
+}
+
+.policies figcaption :nth-child(1){
+
+  text-transform: capitalize;
+}
+.policies figcaption :nth-child(2){
+  font-weight: 200;
+}
+
+.subscription{
+  display: flex;
+  justify-content: center
+  ;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 6vh;
+}
+
+.subscription h5{
+  font-size: 1.7rem;
+  font-weight: 400;
+padding-bottom: 1.2vh;
+}
+.subscription p{
+  font-weight: 200;
+}
+
+.home form{
+  border: .6px solid black;
+
+  margin-top: 4vh;
+  
+}
+
+.home  input{
+  width: 34vw;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  outline: none;
+  padding-left: 10px;
+
+}
+.home button{
+  padding: 1.3vh 2vw;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+
+  

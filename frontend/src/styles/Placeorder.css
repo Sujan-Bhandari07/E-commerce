@@ -1,0 +1,190 @@
+.placeorder{
+
+    width: 90vw;
+    margin: auto;
+    display: flex;
+gap: 13vw;
+margin-top: 15vh;
+    align-items: center;
+    margin-bottom: 10vh;
+
+}
+.placeorder .method .mt button{
+
+
+border: none;
+}
+
+
+.meey{
+background-color: white;
+opacity: .8;
+}
+.placeorder> .dd{
+
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+   
+}
+
+.placeorder .dd h4{
+    font-size: 1.4rem;
+    width: 100%;
+
+    font-weight:400 ;
+    margin-bottom: 6vh;
+}
+
+.placeorder .dd h4 span{
+    font-weight: 200;
+}
+
+.placeorder .dd form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.dd form input{
+    border: .1px solid grey;
+    padding: 2vh;
+    width: 50%;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.dd form> input{
+    width: 100%;
+}
+
+.dd form .n{
+    width: 100%;
+
+    display: flex;
+    gap: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payments{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+    width: 25vw;
+
+
+margin-top: 2vh;
+}
+
+.payments> p{
+    width: 100%;
+    text-align: left;
+    margin: 2vh 0vh;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+
+}
+
+.payments>p span{
+    font-weight: 300;
+}
+
+.payments .totals{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vh;
+}
+
+.totals .total,.subtotals,.shippings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    ;
+    padding-bottom:1vh ;
+    padding-right: 1vw;
+    border-bottom: .1px solid gray;
+
+width: 100%;
+}
+
+.paymentoo{
+    position: relative;
+    left: 10.6vw;
+    margin: 1vh 0;
+    background-color: black;
+    color: white;
+    padding: 1vh;
+    
+    font-size: .9rem;
+    width: 60%;
+}
+
+.placeorder .method{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 2vh;
+    
+}
+
+.placeorder .method h5{
+    font-size: 1.4rem;
+    width: 100%;
+
+    font-weight:400 ;
+
+}
+
+.placeorder .method h5 span{
+    font-weight: 200;
+}
+
+.mt{
+    display: flex
+;
+gap: 1vw;
+}
+
+.placeorder .method .nnn
+    {
+height: 2vh;
+object-fit: cover;
+object-position: center;
+
+}
+
+.placeorder .method button{
+    padding: 1vh 2vh;
+   
+}
+
+.placeorder .sss{
+font-size: .9rem;
+text-transform: capitalize;
+}
+

@@ -1,0 +1,111 @@
+
+
+.collection{
+
+
+
+    width: 93vw;
+    margin: 0 auto;
+
+
+
+}
+
+.collection .coll{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+
+
+}
+
+.coll aside{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+
+
+
+
+}
+
+aside  p{
+    font-size: 1.2rem;
+    margin-bottom: 4vh;
+position: relative;
+left: 1.2vw;
+}
+
+aside .category,.subcategory{
+    border: 1px solid gray;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 1vw;
+}
+aside .category h3{
+    font-weight: 400;
+    padding-bottom: 2vh;
+}
+
+.category input{
+ margin-right: 1vh;
+ padding-bottom: 1vh;
+}
+.subcategory input{
+    margin-right: 1vh;
+ padding-bottom: 1vh;
+}
+
+.subcategory{
+    margin-top: 3vh;
+}
+
+.subcategory h3{
+    font-weight: 400;
+    padding-bottom: 2vh;
+}
+
+.coll .products{
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+    width: 75vw;
+    margin-left: 2vw;
+}
+
+.products .titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titles h3{
+
+    font-weight: 500;
+}
+
+.titles h3 span{
+font-weight: 200;
+
+}
+
+.titles select{
+    padding: 1vh 1vw;
+}
+
+.products .cards{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 2vw 2vw;
+    margin: auto;
+    margin-top: 4vh;
+}
+
