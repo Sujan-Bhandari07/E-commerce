@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const userApi = createApi({
   reducerPath: 'userApi',
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_URL || "http://localhost:3000",credentials:"include" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://e-commerce-backend-k2a0.onrender.com",credentials:"include" }),
   endpoints: (builder) => ({
     Register: builder.mutation({
       query: (data) => ({
