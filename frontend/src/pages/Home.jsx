@@ -15,7 +15,7 @@ const Home = () => {
 
   const{data,isLoading,error}=useGetProductQuery(
   )
-  // console.log(data)
+  console.log(data)
   const latest=  useSelector(latestcollection)
   const bestseller = useSelector(bestsellercollection)
 

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { assets } from '../assets/admin_assets/assets'
 import { useAddProductMutation } from '../services/Productapi'
 import { useDispatch } from 'react-redux'
+import {toast} from "react-hot-toast"
 
 const Add = () => {
   // const navigate = useNavigate()
@@ -23,7 +24,7 @@ const Add = () => {
   const [image3, setImage3] = useState(null)
   const [image4, setImage4] = useState(null)
 
-  const [addProduct, { isLoading }] = useAddProductMutation()
+  const [addProduct, { isLoading ,}] = useAddProductMutation()
 
   const handleSize = (e) => {
     const value = e.target.value
@@ -68,6 +69,8 @@ const Add = () => {
     try {
       await addProduct(form).unwrap()
       resetForm()
+      toast.success("poduct added")
+      
     } catch (error) {
       console.error("Error adding product:", error)
     }

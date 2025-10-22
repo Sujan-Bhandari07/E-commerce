@@ -6,15 +6,22 @@ import { error, success } from "../utils/Utils.js"
 const getproduct = async (req,res ) =>{
 
     try {
+        console.log("=== GET PRODUCT REQUEST ===")
+        console.log("Collection name:", Product.collection.name)
+        console.log("Model name:", Product.modelName)
+        
         const product = await Product.find({})
-        if(!product){
-            return error(res,"Not found")
+        console.log("Total products found:", product.length)
+        console.log("Products:", product)
+        
+        if(!product || product.length === 0){
+            return success(res, [])
         }
 
         return success(res,product)
-    } catch (error) {
-
-        return error(res,error.message)
+    } catch (err) {
+        console.error("Error in getproduct:", err)
+        return error(res,err.message)
         
     }
 
@@ -115,7 +122,7 @@ const deleteproduct = async( req,res) =>{
 
     const {_id} = req.body
     if(!_id){
-        error(res,"Pls provide the Id to the product to be deleted")
+        return error(res,"Pls provide the Id to the product to be deleted")
     }
 
    const deleted= await Product.findByIdAndDelete({_id})

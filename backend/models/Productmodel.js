@@ -14,15 +14,9 @@ const productSchema = new mongoose.Schema({
     isbestseller: { type: Boolean, default: false }
 }, { 
     timestamps: true,
-    // Explicitly disable id field to prevent conflicts
-    id: false,
-    // Ensure _id is properly handled
-    _id: true
+    collection: 'products' // Explicitly set collection name to lowercase 'products'
 });
 
-// Ensure no id field is created
-productSchema.set('id', false);
-
-const Product = mongoose.models.Product || mongoose.model("Product", productSchema);
+const Product = mongoose.model("Product", productSchema);
 
 export default Product;
