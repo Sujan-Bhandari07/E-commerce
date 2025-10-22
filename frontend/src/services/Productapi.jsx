@@ -8,7 +8,7 @@ export const productApi = createApi({
     tagTypes: ["Product","aaa"],
 
   baseQuery: fetchBaseQuery({ 
-    baseUrl: import.meta.env.VITE_API_URL || "http://localhost:3000",
+    baseUrl: "https://e-commerce-backend-k2a0.onrender.com",
     credentials: 'include',
   }),
   endpoints: (builder) => ({
